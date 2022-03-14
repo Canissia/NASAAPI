@@ -8,7 +8,7 @@ searchButton.addEventListener("click", () => {
 
 // An asynchronous function to fetch data from the API.
 async function sendApiRequest() {
-    let API_KEY = "Ve9Q8MUvdk9o0Yexgj6NnDLWN9FzWgmQ8Yd8Z98Y"
+    let API_KEY = "API_KEY"
     let response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`);
     let data = await response.json()
     useApiData(data)
